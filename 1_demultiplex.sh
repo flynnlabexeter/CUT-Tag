@@ -21,7 +21,7 @@ AGCGATAG	ACGTCCTG	Sample3.r2.fq.gz	Sample3
 #SBATCH -o demult1RNA_.out
 #SBATCH -e demult1_.err
 
-/path/to/demultiplexer.rhel/demuxFQ -c -d -i -e -t 1 -r 0.01 -R -l 8 -o /path/to/output/folder/ -s slx24070_summary_demuxFQ_r1.txt demux_myrun_1.txt myrun.s_1.r_1.fq.gz
+/path/to/demultiplexer.rhel/demuxFQ -c -d -i -e -t 1 -r 0.01 -R -l 8 -o /path/to/output/folder/ -s myrun_summary_demuxFQ_r1.txt demux_myrun_1.txt myrun.s_1.r_1.fq.gz
 
 ################ demux2.sh ###################################
 #!/bin/bash
@@ -32,4 +32,4 @@ AGCGATAG	ACGTCCTG	Sample3.r2.fq.gz	Sample3
 #SBATCH -o demult2_.out
 #SBATCH -e demult2_.err
 
-/path/to/demultiplexer.rhel/demuxFQ -c -d -i -e -t 1 -r 0.01 -R -l 8 -o /path/to/output/folder/ -s slx24070_summary_demuxFQ_r2.txt demux_myrun_2.txt myrun.s_1.r_2.fq.gz
+/path/to/demultiplexer.rhel/demuxFQ -c -d -i -e -t 1 -r 0.01 -R -l 8 -o /path/to/output/folder/ -s myrun_summary_demuxFQ_r2.txt demux_myrun_2.txt myrun.s_1.r_2.fq.gz
