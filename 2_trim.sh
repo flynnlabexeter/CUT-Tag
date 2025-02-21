@@ -17,6 +17,7 @@ ls *r2.fq.gz  > acc2
 
 #adjust the array number above to your number of samples
 
+mkdir -p trimmed
 raw='path/to/fastq/files'
 out='path/to/fastq/files/trimmed'
 
